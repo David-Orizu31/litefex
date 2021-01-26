@@ -1,0 +1,635 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head class="crypt-dark">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LITEFEX | Forex, Binary and Cryptocurrency Trading Comapny</title>
+<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/icons.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../css/ui.css">
+<style>
+    input[type=number]::-webkit-inner-spin-button {
+    opacity: 1
+}
+
+</style>
+</head>
+<body class="crypt-dark">
+<header>
+<div class="container-full-width">
+<div class="crypt-header">
+<div class="row">
+<div class="col-xl-4 col-lg-4 col-md-4 col-sm-5">
+<div class="row">
+<div class="col-xs-2">
+<div class="crypt-logo" style="margin-left:15px"><img src="../images/logo.jpg" alt="" style="max-width:180px"></div>
+</div>
+<div class="col-xs-2">
+<div class="crypt-mega-dropdown-menu"> <a href="#" class="crypt-mega-dropdown-toggle">BTC/USD <i class="fa fa-angle-down"></i></a>
+<div class="crypt-mega-dropdown-menu-block" style="width: fit-content;">
+<div class="crypt-market-status" style="    height: 400px; width: fit-content;">
+
+<div class="tradingview-widget-container">
+<div class="tradingview-widget-container__widget"></div>
+<div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/BITSTAMP-BTCUSD/technicals/" rel="noopener" target="_blank"><span class="blue-text"></span></a></div>
+<script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+  {
+  "interval": "1m",
+  "width": "300",
+  "colorTheme": "dark",
+  "isTransparent": true,
+  "height": "400",
+  "symbol": "BITSTAMP:BTCUSD",
+  "showIntervalTabs": true,
+  "locale": "en"
+}
+  </script>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xl-8 col-lg-8 col-md-8 d-none d-md-block d-lg-block">
+<ul class="crypt-heading-menu fright">
+<li class="crypt-box-menu menu-green" style="border-radius:5px;"><a href="exchange.html">Exchange</a></li>
+<li><a href="market-overview.html">Overview</a></li>
+<li><a href="screener.html">Market Screener</a></li>
+<li><a href="account.html">Account</a></li>
+<li class="crypt-up" style="font-size: large;">$0.00</li>
+<li class="crypt-box-menu menu-red"><a href="login.html">Logout</a></li>
+</ul>
+</div><i class="menu-toggle pe-7s-menu d-xs-block d-sm-block d-md-none d-sm-none"></i></div>
+</div>
+</div>
+<div class="crypt-mobile-menu">
+<ul class="crypt-heading-menu">
+<li class="active"><a href="exchange.html">Exchange</a></li>
+<li><a href="market-overview.html">Overview</a></li>
+<li><a href="screener.html">Market Screener</a></li>
+<li><a href="account.html">Account</a></li>
+<li class="crypt-box-menu menu-red"><a href="login.html">Logout</a></li>
+</ul>
+<div class="crypt-gross-market-cap">
+<h5>$0.00 <span class="crypt-up pl-2">Main Balance</span></h5>
+<h6>$0.00 <span class="crypt-down pl-2">Signal Fee</span></h6></div>
+</div>
+</header>
+<script src="../js/jquery-3.3.1.min.js"></script>
+<script src="../js/jquery-cookie-1.4.1.js"></script>
+</div>
+<div class="container-fluid">
+<div class="row sm-gutters">
+<div class="col-md-6 col-lg-6 col-xl-2 col-xxl-2">
+<div class="crypt-market-status mt-4">
+<div>
+<ul class="nav nav-tabs" id="crypt-tab">
+<li role="presentation"><a href="#usd" class="active" data-toggle="tab">usd</a></li>
+<li role="presentation"><a href="#btc" data-toggle="tab">btc</a></li>
+<li role="presentation"><a href="#eth" data-toggle="tab">eth</a></li>
+</ul>
+<div class="tab-content crypt-tab-content">
+<div role="tabpanel" class="tab-pane active" id="usd">
+
+<div class="tradingview-widget-container">
+<div class="tradingview-widget-container__widget"></div>
+<div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/BITSTAMP-EURUSD/" rel="noopener" target="_blank"><span class="blue-text"></span></a> </div>
+<script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
+  {
+  "symbol": "BITSTAMP:EURUSD",
+  "width": "100%",
+  "colorTheme": "dark",
+  "isTransparent": true,
+  "locale": "en"
+}
+  </script>
+</div>
+
+
+<div class="tradingview-widget-container">
+<div class="tradingview-widget-container__widget"></div>
+<div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/COINBASE-LTCUSD/" rel="noopener" target="_blank"><span class="blue-text"></span></a> </div>
+<script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
+  {
+  "symbol": "COINBASE:LTCUSD",
+  "width": "100%",
+  "colorTheme": "dark",
+  "isTransparent": true,
+  "locale": "en"
+}
+  </script>
+</div>
+
+
+<div class="tradingview-widget-container">
+<div class="tradingview-widget-container__widget"></div>
+<div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/BITFINEX-ETHUSD/" rel="noopener" target="_blank"><span class="blue-text"></span></a> </div>
+<script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
+  {
+  "symbol": "BITFINEX:ETHUSD",
+  "width": "100%",
+  "colorTheme": "dark",
+  "isTransparent": true,
+  "locale": "en"
+}
+  </script>
+</div>
+
+
+<div class="tradingview-widget-container">
+<div class="tradingview-widget-container__widget"></div>
+<div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/POLONIEX-DOGEUSD/" rel="noopener" target="_blank"><span class="blue-text"></span></a></div>
+<script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
+  {
+  "symbol": "POLONIEX:DOGEUSD",
+  "width": "100%",
+  "colorTheme": "dark",
+  "isTransparent": true,
+  "locale": "en"
+}
+  </script>
+</div>
+
+
+<div class="tradingview-widget-container">
+<div class="tradingview-widget-container__widget"></div>
+<div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/BITFINEX-XMRUSD/" rel="noopener" target="_blank"><span class="blue-text"></span></a></div>
+<script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
+  {
+  "symbol": "BITFINEX:XMRUSD",
+  "width": "100%",
+  "colorTheme": "dark",
+  "isTransparent": true,
+  "locale": "en"
+}
+  </script>
+</div>
+
+
+<div class="tradingview-widget-container">
+<div class="tradingview-widget-container__widget"></div>
+<div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/KRAKEN-DASHUSD/" rel="noopener" target="_blank"><span class="blue-text"></span></a> </div>
+<script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
+  {
+  "symbol": "KRAKEN:DASHUSD",
+  "width": "100%",
+  "colorTheme": "dark",
+  "isTransparent": true,
+  "locale": "en"
+}
+  </script>
+</div>
+
+
+<div class="tradingview-widget-container">
+<div class="tradingview-widget-container__widget"></div>
+<div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/COINBASE-EOSUSD/" rel="noopener" target="_blank"><span class="blue-text"></span></a></div>
+<script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
+  {
+  "symbol": "COINBASE:EOSUSD",
+  "width": "100%",
+  "colorTheme": "dark",
+  "isTransparent": true,
+  "locale": "en"
+}
+  </script>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-6 col-xl-7 col-xxl-8">
+<div class="crypt-gross-market-cap mt-4">
+<div class="row" style="height:70px">
+
+<div class="tradingview-widget-container">
+<div class="tradingview-widget-container__widget"></div>
+<div class="tradingview-widget-copyright"><a href="https://www.tradingview.com" rel="noopener" target="_blank"><span class="blue-text"></span></a> </div>
+<script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+  {
+  "symbols": [
+    {
+      "proName": "OANDA:SPX500USD",
+      "title": "S&P 500"
+    },
+    {
+      "proName": "OANDA:NAS100USD",
+      "title": "Nasdaq 100"
+    },
+    {
+      "proName": "FX_IDC:EURUSD",
+      "title": "EUR/USD"
+    },
+    {
+      "proName": "BITSTAMP:BTCUSD",
+      "title": "BTC/USD"
+    },
+    {
+      "proName": "BITSTAMP:ETHUSD",
+      "title": "ETH/USD"
+    },
+    {
+      "description": "USD/GBP",
+      "proName": "FX_IDC:USDGBP"
+    },
+    {
+      "description": "GOOGLE",
+      "proName": "CBOE:VXGOG"
+    },
+    {
+      "description": "AUD/USD",
+      "proName": "FX:AUDUSD"
+    }
+  ],
+  "colorTheme": "dark",
+  "isTransparent": true,
+  "displayMode": "compact",
+  "locale": "en"
+}
+  </script>
+</div>
+</div>
+</div>
+<div class="tradingview-widget-container mb-3">
+<div id="crypt-candle-chart"></div>
+</div>
+<div id="depthchart" class="depthchart h-40 crypt-dark-segment"></div>
+</div>
+<div class="col-md-6 col-lg-6 col-xl-3 col-xxl-2">
+<div class="crypt-market-status mt-4">
+<div>
+<ul class="nav nav-tabs">
+<li role="presentation"><a href="#history" class="active crypt-up" data-toggle="tab">Sell</a></li>
+<li role="presentation"><a href="#market-trading" class="crypt-down" data-toggle="tab">Buy</a></li>
+</ul>
+<div class="tab-content">
+<div role="tabpanel" class="tab-pane active" id="history">
+<div class="col-md-12">
+<div class="crypt-buy-sell-form">
+<p>Sell <span class="crypt-up">PAIRS</span> <span class="fright">Balance: <b class="crypt-up">$0.00</b></span></p>
+<div class="crypt-buy">
+<div class="input-group mb-3">
+<div class="input-group-prepend"> <span class="input-group-text">Currency Pair</span> </div>
+<select id="sellPairs" class="form-control" required>
+<option value="USD/RUB">USD/RUB</option>
+<option value="EUR/USD">EUR/USD</option>
+<option value="USD/JPY">USD/JPY</option>
+<option value="AUD/USD">AUD/USD</option>
+<option selected value="BTC/USD">BTC/USD</option>
+<option value="XRP/USD">XRP/USD</option>
+<option value="ETH/USD">ETH/USD</option>
+<option value="GBP/USD">GBP/USD</option>
+<option value="USD/CAD">USD/CAD</option>
+<option value="NZD/USD">NZD/USD</option>
+<option value="EUR/GBP">EUR/GBP</option>
+</select>
+
+<div class="input-group-append"> </div>
+</div>
+<div class="input-group mb-3">
+<div class="input-group-prepend"> <span class="input-group-text">Current Rate</span> </div>
+<input id="sellAmount" step=0.1 type="number" name="value" class="form-control" autofocus="autofocus" value="34515.63" required>
+</div>
+<div class="input-group mb-3">
+<div class="input-group-prepend"> <span class="input-group-text">Stake Amount</span> </div>
+<input id="sellStake" type="number" name="value" class="form-control" autofocus="autofocus" required>
+</div>
+<div class="input-group mb-3">
+<div class="input-group-prepend"> <span class="input-group-text">Duration</span> </div>
+<select id="sellDuration" class="form-control" required>
+<option value="1">1 mins</option>
+<option value="5">5 mins</option>
+<option value="15">15 mins</option>
+<option value="20">20 mins</option>
+<option value="30">30 mins</option>
+</select>
+
+</div>
+<div class="menu-green"><button style="outline:none;border:0" id="tradeSell" class="crypt-button-green-full">Sell</botton></div>
+</div>
+</div>
+</div>
+<h6 class="text-center pt-2 pt-2">Most <span class="pl-3">Recent</span></h6>
+<table class="table table-striped">
+ <tbody>
+</tbody>
+</table>
+</div>
+<div role="tabpanel" class="tab-pane" id="market-trading">
+<div class="col-md-12">
+<div class="crypt-buy-sell-form">
+<p>Buy <span class="crypt-down">PAIRS</span> <span class="fright">Balance: <b class="crypt-down">$0.00</b></span></p>
+<div class="crypt-sell">
+<div class="input-group mb-3">
+<div class="input-group-prepend"> <span class="input-group-text">Currency Pair</span> </div>
+<select id="buyPairs" class="form-control" required>
+<option value="USD/RUB">USD/RUB</option>
+<option value="EUR/USD">EUR/USD</option>
+<option value="USD/JPY">USD/JPY</option>
+<option value="AUD/USD">AUD/USD</option>
+<option selected value="BTC/USD">BTC/USD</option>
+<option value="XRP/USD">XRP/USD</option>
+<option value="ETH/USD">ETH/USD</option>
+<option value="GBP/USD">GBP/USD</option>
+<option value="USD/CAD">USD/CAD</option>
+<option value="NZD/USD">NZD/USD</option>
+<option value="EUR/GBP">EUR/GBP</option>
+</select>
+
+<div class="input-group-append"> </div>
+</div>
+<div class="input-group mb-3">
+<div class="input-group-prepend"> <span class="input-group-text">Current Rate</span> </div>
+<input id="buyAmount" step=0.1 type="number" value="34515.63" class="form-control">
+</div>
+<div class="input-group mb-3">
+<div class="input-group-prepend"> <span class="input-group-text">Stake Amount</span> </div>
+<input id="buyStake" type="number" name="value" class="form-control" autofocus="autofocus" required>
+</div>
+<div class="input-group mb-3">
+<div class="input-group-prepend"> <span class="input-group-text">Duration</span> </div>
+<select id="buyDuration" class="form-control" required>
+<option value="1">1 mins</option>
+<option value="5">5 mins</option>
+<option value="15">15 mins</option>
+<option value="20">20 mins</option>
+<option value="30">30 mins</option>
+
+</select>
+
+</div>
+<div><button style="border:0;outline:none" id="tradeBuy" class="crypt-button-red-full">Buy</a></div>
+</div>
+</div>
+</div>
+<h6 class="text-center pt-2 pt-2">Most <span class="pl-3">Recent</span></h6>
+<table class="table table-striped">
+<tbody>
+
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="container-fluid">
+<div class="row sm-gutters">
+<div class="col-xl-12">
+<div>
+<div class="crypt-market-status">
+<div>
+<ul class="nav nav-tabs">
+<li role="presentation"><a href="#history-orders" class="active" data-toggle="tab">History</a></li>
+<li role="presentation"><a href="#active-orders" data-toggle="tab">Active Orders</a></li>
+<li role="presentation"><a href="#closed-orders" data-toggle="tab">Closed Orders</a></li>
+</ul>
+<div class="tab-content" style="overflow-x: scroll;">
+<div role="tabpanel" class="tab-pane active" id="history-orders">
+<script src="../js/fancyTable.min.js"></script>
+<script src="../js/jquery-cookie-1.4.1.js"></script>
+<script type="text/javascript" src="../register.html"></script>
+
+<script type="text/javascript">
+        $(document).ready(function() {
+              $.noConflict();
+         
+            $("#project-progress").fancyTable({
+              
+                pagination: true,
+                perPage:10,
+                globalSearch:true,
+                inputStyle: 'color:black',
+                sortable: false,
+                paginationClass: "btn btn-info"
+            });     
+        });
+    </script>
+<table class="table table-striped" id="progressd">
+<thead>
+<tr>
+<th scope="col">Asset</th>
+<th scope="col">Invested</th>
+<th scope="col">Option</th>
+<th scope="col">Entry Rate</th>
+<th scope="col">Rate</th>
+<th scope="col">Entry Time</th>
+<th scope="col">Exp. Time</th>
+<th scope="col">Status</th>
+<th scope="col">Returns</th>
+</tr>
+</thead>
+<body>
+</body>
+</table>
+</div>
+<div role="tabpanel" class="tab-pane" id="active-orders">
+<div class="no-orders text-center"><img src="../images/empty.png" alt="no-orders"></div>
+</div>
+<div role="tabpanel" class="tab-pane" id="closed-orders">
+<div class="no-orders text-center"><img src="../images/empty.png" alt="no-orders"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script src="../js/jquery-3.3.1.min.js"></script>
+<script src="../js/fancyTable.js"></script>
+<script src="../js/fancyTable.min.js"></script>
+
+<script type="text/javascript">
+ 
+        $(document).ready(function() {
+            $.noConflict();
+            $("#progressd").fancyTable({
+                pagination: true,
+                perPage:20,
+                globalSearch:true,
+                inputStyle: 'color:black',
+                sortable: true,
+                paginationClass: "btn btn-danger"
+            });     
+       });
+    </script>
+<script src="../js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function(){
+$.noConflict();
+$("#tradeSell").click(function(event){
+$('#tradeSell').html('Trade initiation in progress');
+$('#tradeSell').attr("disabled", true);  
+event.preventDefault();
+var sellPairs = $("#sellPairs").val();
+var sellAmount=$("#sellAmount").val();
+var sellDuration=$("#sellDuration").val();
+var sellStake=$("#sellStake").val();
+var option="call";
+
+
+if(sellPairs ==""||sellAmount == "" || sellDuration ==""||sellStake == ""){
+    alert("All fields are required");
+    $('#tradeSell').html('Sell');
+    $('#tradeSell').attr("disabled", false);
+    exit();
+}
+
+if(sellStake <10 ){
+    alert("Minimum tradiing amount is $10");
+    $('#tradeSell').html('Sell');
+    $('#tradeSell').attr("disabled", false); 
+    exit();
+    
+}
+
+ $.ajax({
+    url: 'createSellTrade',
+    type: 'POST',
+    data: {sellPairs: sellPairs, sellAmount: sellAmount, sellDuration: sellDuration, sellStake: sellStake, option:option},
+    async: false,
+     cache: false,
+     processData: true,
+   //  contentType: false,
+   //  dataType: 'json',
+      success: function (data) {
+        
+         if (data==1){
+            alert("Trade initiated");
+       location.reload();
+
+         }
+         else{
+
+alert("Insufficient Fund");
+$('#tradeSell').html('Sell');
+$('#tradeSell').attr("disabled", false);
+
+         }
+
+    }
+  });
+
+});
+//buy button
+
+$("#tradeBuy").click(function(event){
+    
+event.preventDefault();
+var sellPairs = $("#buyPairs").val();
+var sellAmount=$("#buyAmount").val();
+var sellDuration=$("#buyDuration").val();
+var sellStake=$("#buyStake").val();
+var option="put";
+
+if(sellPairs ==""||sellAmount == "" || sellDuration ==""||sellStake == "" ){
+    alert("All fields are required");
+    exit();
+}
+
+if(sellStake <10 ){
+    alert("Minimum tradiing amount is $10");
+    exit();
+}
+
+
+ $.ajax({
+    url: 'createSellTrade',
+    type: 'POST',
+    data: {sellPairs: sellPairs, sellAmount: sellAmount, sellDuration: sellDuration, sellStake: sellStake, option: option},
+    async: false,
+     cache: false,
+     processData: true,
+   //  contentType: false,
+   //  dataType: 'json',
+      success: function (data) {
+        console.log(data);
+         if (data==1){
+            alert("Trade initiated");
+        location.reload();
+
+         }
+         else{
+
+alert("Insufficient Fund");
+
+         }
+
+    }
+  });
+
+});
+
+
+$('#sellPairs').on('change', function (e) {
+    var asset = this.value;
+    $.ajax({
+    url: 'assetSearch',
+    type: 'POST',
+    data: {asset: asset},
+    async: false,
+     cache: false,
+     processData: true,
+   //  contentType: false,
+   //  dataType: 'json',
+      success: function (data) {
+        
+    $("#sellAmount").val(data);
+
+    }
+  });
+    
+
+});
+
+
+$('#buyPairs').on('change', function (e) {
+    var asset = this.value;
+    $.ajax({
+    url: 'assetSearch',
+    type: 'POST',
+    data: {asset: asset},
+    async: false,
+     cache: false,
+     processData: true,
+   //  contentType: false,
+   //  dataType: 'json',
+      success: function (data) {
+        
+    $("#buyAmount").val(data);
+
+    }
+  });
+    
+
+});
+
+
+});
+</script>
+<footer>
+</footer>
+<script src="../js/tv.js"></script>
+<script src="../js/bundle.js"></script>
+
+<script>
+
+  window.intercomSettings = {
+    app_id: "vb1l0h05"
+  };
+</script>
+<script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/vb1l0h05';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();</script>
+</body>
+</html>

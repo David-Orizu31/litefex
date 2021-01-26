@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head class="crypt-dark">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LITEFEX | Forex, Binary and Cryptocurrency Trading Comapny</title>
+<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/icons.css">
+<link rel="stylesheet" href="../css/ui.css">
+</head>
+<body class="crypt-dark">
+<div class="container">
+<div class="row">
+<div class="col-md-3"></div>
+<div class="col-md-6">
+<div class="cryptorio-forms cryptorio-forms-dark text-center pt-5 pb-5">
+<div class="logo">
+<img src="../images/logo(1).png" alt="logo-image" style="max-width:250px;">
+</div>
+<h4 class="p-4">Login</h4>
+<div class="cryptorio-main-form">
+<form id="log-form" action="#" method="post" class="text-left">
+<label for="email">Account Email</label>
+<input type="text" id="email" name="email" placeholder="Your email/cellphone" style="color:white">
+<label for="password">Password</label>
+<input type="password" id="password" name="password" placeholder="Please Input Your Password" style="color:white">
+<input type="submit" value="Log In" class="crypt-button-red-full">
+<div id="message"></div>
+</form>
+<p class="float-left"><a href="register.html">Sign Up</a></p>
+<p class="float-right"><a href="forgot.html">Forgot Password</a></p>
+</div>
+</div>
+</div>
+<div class="col-md-3"></div>
+</div>
+</div>
+<script>
+
+  window.intercomSettings = {
+    app_id: "vb1l0h05"
+  };
+</script>
+<script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/vb1l0h05';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();</script>
+</body>
+</html>
+<script src="../js/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+<script type="text/javascript">
+            $(document).ready(function(){
+                  $("#log-form").submit(function(event){
+                	event.preventDefault();
+               
+                    var username = $("#email").val().trim();
+                    var password = $("#password").val().trim();
+ 	
+                    if( username != "" && password != "" ){
+
+                        $.ajax({
+                            url:'checkUser',
+                            type:'post',
+                            beforeSend: function() { 
+    						
+						    $("#message").html('<div class="alert alert-info"><h4 class="block" style="font-weight: bold;">  <i class = "fa fa-spinner fa-2x fa-spin"></i>Validating Your Data.... </h4></div>');
+						    $("#message").fadeIn();
+						   },
+                            data:{username:username,password:password},
+                            success:function(response){
+                            	//	alert("testing");
+                            //	alert(response);
+                                var msg = "";
+                                if(response == 1){
+                                     msg = '<div class="alert alert-success alert-dismissable"><h4 class="block"> <i class="fa fa-check"></i>Login Successful!  Redirecting to Dashboard...</h4></div>';
+                                    setTimeout('window.location.href = "exchange.php"; ',1000);
+                                }else{
+                                    msg = "<div class='alert alert-danger'><button type='button' class='close' data-dismiss='alert' aria-label='Close'><span aria-hidden='true'>&times;</span></button>Invalid username and password!</div>";
+                                }
+                                $("#message").fadeIn()
+                                $("#message").html(msg);
+                            }
+                        });
+                    }
+                });
+
+            }); 
+</script>
